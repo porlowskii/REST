@@ -1,0 +1,15 @@
+package wsb.rest.exceptions;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class MyExceptionsHandler {
+
+    @ExceptionHandler(value = ResourceNotFoundException.class)
+    ResponseEntity<Void> handleResourceNotFoundException() {
+        return ResponseEntity.notFound().build();
+    }
+
+}
