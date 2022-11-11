@@ -2,6 +2,7 @@ package wsb.rest.services;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import wsb.rest.exceptions.ResourceNotFoundException;
 import wsb.rest.models.Phone;
 import wsb.rest.models.PhoneDto;
 import wsb.rest.repositores.PhoneRepository;
@@ -18,8 +19,9 @@ public class PhoneService {
     public List<Phone> getAll() {return phoneRepository.getAll();}
 
     public Phone get(Long id) {
-        return phoneRepository.get(id)
-                .orElseThrow();
+        return phoneRepository
+                .get(id)
+                .orElseThrow(ResourceNotFoundException::new);
     }
 
     public Phone create(PhoneDto phoneDto) {

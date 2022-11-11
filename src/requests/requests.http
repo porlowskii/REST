@@ -1,0 +1,37 @@
+GET http://localhost:6000/phones
+
+###
+GET http://localhost:6000/phones/123
+
+###
+POST http://localhost:6000/phones
+Content-Type: application/json
+
+{
+  "producer": "Alcatel",
+  "model": "XZ1211",
+  "year": "2000"
+}
+
+###
+PUT http://localhost:6000/phones/123
+Content-Type: application/json
+
+{
+  "producer": "Iphone",
+  "model": "14pro",
+  "year": "2020"
+}
+
+###
+PUT http://localhost:6000/phones/1
+Content-Type: application/json
+
+{
+  "producer": "Iphone",
+  "model": "14pro",
+  "year": "2020"
+}
+
+###
+DELETE http://localhost:6000/phones/1333333
