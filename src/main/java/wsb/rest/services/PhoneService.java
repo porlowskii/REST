@@ -8,7 +8,6 @@ import wsb.rest.models.PhoneDto;
 import wsb.rest.repositores.PhoneRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @AllArgsConstructor

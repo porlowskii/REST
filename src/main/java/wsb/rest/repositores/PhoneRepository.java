@@ -1,7 +1,6 @@
 package wsb.rest.repositores;
 
 import org.springframework.stereotype.Repository;
-import wsb.rest.exceptions.ResourceNotFoundException;
 import wsb.rest.models.Phone;
 import wsb.rest.models.PhoneDto;
 
