@@ -1,0 +1,82 @@
+GET http://localhost:6000/phones
+
+<> 2022-11-12T105806.200.json
+
+###
+
+GET http://localhost:6000/phones/523
+
+###
+
+GET http://localhost:6000/phones/5
+
+###
+
+DELETE http://localhost:6000/phones/5
+
+###
+
+DELETE http://localhost:6000/phones/1333333
+
+###
+
+PUT http://localhost:6000/phones/1
+Content-Type: application/json
+
+{
+  "producer": "Iphone",
+  "model": "14pro",
+  "year": "2020"
+}
+
+<> 2022-11-12T105728.200.json
+
+###
+
+PUT http://localhost:6000/phones/1
+Content-Type: application/json
+
+{
+  "producer": "Iphone",
+  "model": "14pro",
+  "year": "2020"
+}
+
+<> 2022-11-12T105721.200.json
+
+###
+
+PUT http://localhost:6000/phones/123
+Content-Type: application/json
+
+{
+  "producer": "Iphone",
+  "model": "14pro",
+  "year": "2020"
+}
+
+###
+
+POST http://localhost:6000/phones
+Content-Type: application/json
+
+{
+  "producer": "Alcatel",
+  "model": "XZ1211",
+  "year": "2000"
+}
+
+<> 2022-11-12T105703.201.json
+
+###
+
+GET http://localhost:6000/phones/123
+
+###
+
+GET http://localhost:6000/phones
+
+<> 2022-11-12T105644.200.json
+
+###
+

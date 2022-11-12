@@ -1,7 +1,7 @@
 GET http://localhost:6000/phones
 
 ###
-GET http://localhost:6000/phones/123
+GET http://localhost:6000/phones/523
 
 ###
 POST http://localhost:6000/phones
@@ -35,3 +35,6 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:6000/phones/1333333
+
+###
+DELETE http://localhost:6000/phones/5
